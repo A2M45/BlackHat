@@ -13,13 +13,11 @@
         line-height: 1.6;
       }
 
-      /* Titres */
       h1, h2 {
         text-align: center;
         color: #222;
       }
 
-      /* Bloc section */
       section {
         background: white;
         max-width: 800px;
@@ -29,15 +27,9 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
-      /* Paragraphes & emphase */
-      p {
-        margin-bottom: 1rem;
-      }
-      em {
-        color: #666;
-      }
+      p { margin-bottom: 1rem; }
+      em { color: #666; }
 
-      /* Image */
       img {
         display: block;
         max-width: 200px;
@@ -45,24 +37,18 @@
         border-radius: 10px;
       }
 
-      /* Liste numérotée */
       ol {
         max-width: 700px;
         margin: 1rem auto;
         padding-left: 2rem;
       }
-      ol li {
-        padding: 0.3rem 0;
-      }
+      ol li { padding: 0.3rem 0; }
 
-      /* Liens */
       a {
         color: #0056b3;
         text-decoration: none;
       }
-      a:hover {
-        text-decoration: underline;
-      }
+      a:hover { text-decoration: underline; }
 
       /* Pied de page */
       footer {
@@ -72,6 +58,39 @@
         color: #fff;
         margin-top: 2rem;
       }
+
+      /* --- Formulaire --- */
+      form {
+        max-width: 600px;
+        margin: 2rem auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 0.6rem;
+        margin-top: 0.3rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+      button {
+        background: #0056b3;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover { background: #003d80; }
     </style>
   </head>
 
@@ -97,6 +116,21 @@
         <a href="https://developer.mozilla.org/fr/docs/Web/HTML">Clique ici</a>
       </p>
     </section>
+
+    <!-- Formulaire Formspree -->
+    <form action="https://formspree.io/f/myzdvvyz" method="POST">
+      <label>
+        Votre email :
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Votre message :
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Envoyer</button>
+    </form>
 
     <footer>
       Rédigé et codé par BlackHat 2025
